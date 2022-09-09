@@ -1,5 +1,7 @@
 import React from 'react';
 
+import {BsFillCartFill} from 'react-icons/bs'
+
 import './Card.css'
 
 const Card = ( props ) => {
@@ -17,7 +19,10 @@ const Card = ( props ) => {
 				<p>Action : {action}</p>
 			</div>
 			<div className="add-to-cart">
-			
+				<button>
+					<BsFillCartFill className="icon" />
+				</button>
+                <h1>$ {price}</h1>
 			</div>
 		</div>
 	);
